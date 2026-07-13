@@ -1,7 +1,5 @@
-# benefits-distribution
+# Benefits Distribution
 
-Engineering benefit distribution as connected lanes from constraint to telemetry, distribution, and sustainable-development indicators.
+This repository specifies benefit distribution as an engineering variable for sustainable development.
 
-**Benefit Distribution Specifies Sustainable Development**
-
-Notebook 00: connected lanes specify benefit distribution.
+It develops reusable engineering notebooks, figures, and code for modeling, measuring, and improving benefit distribution.

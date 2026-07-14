@@ -1,16 +1,31 @@
 from pathlib import Path
 
+
 def find_repo_root() -> Path:
-    cwd = Path.cwd()
-    if cwd.name == "notebooks":
-        return cwd.parent
-    return cwd
+    root = Path.cwd()
+
+    if root.name == "notebooks":
+        root = root.parent
+
+    return root
+
 
 ROOT = find_repo_root()
+
 FIGURES = ROOT / "figures"
 RESULTS = ROOT / "results"
 DATA = ROOT / "data"
 NOTEBOOKS = ROOT / "notebooks"
 
-for path in [FIGURES, RESULTS, DATA, NOTEBOOKS]:
-    path.mkdir(parents=True, exist_ok=True)
+
+def initialize_directories() -> None:
+    for directory in (
+        FIGURES,
+        RESULTS,
+        DATA,
+        NOTEBOOKS,
+    ):
+        directory.mkdir(
+            parents=True,
+            exist_ok=True,
+        )

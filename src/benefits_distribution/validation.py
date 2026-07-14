@@ -1,10 +1,8 @@
-from __future__ import annotations
-
 from .context import RepositoryContext
 
 
 class ContextValidationError(ValueError):
-    """Raised when a repository context is incomplete or inconsistent."""
+    """Raised when repository context is incomplete or inconsistent."""
 
 
 def validate_context(context: RepositoryContext) -> None:
@@ -52,11 +50,16 @@ def validate_context(context: RepositoryContext) -> None:
             "lane_symbols and lane_labels must have equal length"
         )
 
-    expected_next = context.construction_sequence[1]
-    expected_number = expected_next.split(" ", 1)[0]
-
-    if not context.next_notebook.startswith(expected_number):
+    if len(context.construction_sequence) < 2:
         raise ContextValidationError(
-            "next_notebook does not match the second item "
+            "construction_sequence must include Notebook 00 "
+            "and at least one subsequent notebook"
+        )
+
+    next_number = context.construction_sequence[1].split(" ", 1)[0]
+
+    if not context.next_notebook.startswith(next_number):
+        raise ContextValidationError(
+            "next_notebook must match the second item "
             "in construction_sequence"
         )

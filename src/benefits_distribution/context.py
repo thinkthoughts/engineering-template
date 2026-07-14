@@ -28,7 +28,7 @@ class RepositoryContext:
     lane_labels: tuple[str, ...]
 
     repository_variable_title: str
-    lane_caption: str
+    lane_relationships: tuple[str, ...]
 
     repository_sequence_title: str
     repository_sequence_caption: str

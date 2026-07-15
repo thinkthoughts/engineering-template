@@ -24,3 +24,20 @@ notebook sequence, and generated context artifacts used by every later notebook.
 """
         )
     )
+
+
+def render_specification_grammar(context: RepositoryContext) -> None:
+    """Render the canonical specification grammar and design principle."""
+
+    grammar_chain = " → ".join(context.grammar)
+
+    display(
+        Markdown(
+            f"""## {context.grammar_title}
+
+**{grammar_chain}**
+
+**{context.design_principle}**
+"""
+        )
+    )

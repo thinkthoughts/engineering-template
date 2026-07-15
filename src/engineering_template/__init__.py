@@ -13,6 +13,9 @@ from .figures import (
     plot_engineering_grammar,
     plot_repository_lane,
 )
+from .render import (
+    render_engineering_context,
+)
 from .paths import (
     DATA,
     FIGURES,
@@ -40,6 +43,7 @@ __all__ = [
     "plot_repository_lane",
     "plot_construction_sequence",
     "generate_context_figures",
+    "render_engineering_context",
     "create_outputs_archive",
     "finalize_notebook",
 ]

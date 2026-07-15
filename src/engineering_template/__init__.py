@@ -1,7 +1,12 @@
-"""Reusable infrastructure for engineering-template notebooks."""
+"""
+Reusable infrastructure for engineering-template notebooks.
+"""
 
 from .context import RepositoryContext
-from .export import create_outputs_archive, finalize_notebook
+from .export import (
+    create_outputs_archive,
+    finalize_notebook,
+)
 from .figures import (
     generate_context_figures,
     plot_construction_sequence,
@@ -16,7 +21,10 @@ from .paths import (
     ROOT,
     initialize_directories,
 )
-from .validation import ContextValidationError, validate_context
+from .validation import (
+    ContextValidationError,
+    validate_context,
+)
 
 __all__ = [
     "RepositoryContext",

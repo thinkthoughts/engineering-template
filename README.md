@@ -1,40 +1,40 @@
-# Engineering Template
+# Benefits Distribution
 
-This repository provides a reusable template for developing engineering repositories from leading specifications.
+This repository specifies engineering variable as an engineering variable for measurable engineering outcomes.
 
-It generates a specification grammar, repository engineering-variable lane, repository notebook sequence, figures, and a machine-readable context manifest from one `RepositoryContext` object.
+It develops a connected engineering specification for modeling, measuring, and improving engineering variable.
 
-## Engineering Statement
+## Engineering statement
 
-> **A specified engineering variable connects observable states to admissible indicators.**
+> **Engineering Variable Specifies Sustainable Development**
 
-## Specification Grammar
+<img src="figures/engineering-template-repo.png" />
 
-```text
+## Engineering grammar
+
+```
 Constraint
 ↓
-Connected lane
+Connected lanes
 ↓
-Engineering object
+Engineering objects
 ↓
-Engineering variable
+Engineering variables
 ↓
-Observable state
+Observable states
 ↓
-Indicator
+Indicators
 ```
 
-**Admissible generalizations trail leading specifications.**
+## Repository construction
 
-## Repository Notebook Sequence
-
-```text
+```
 00  Engineering Context
 01  Constraints
 07  Connected Lanes
 11  Engineering Objects
 13  Engineering Variables
-17  Observable State
+17  State Estimation
 19  Distribution
 23  Dynamics
 29  Optimization
@@ -42,12 +42,14 @@ Indicator
 43  Benchmarks
 ```
 
-Each notebook develops an engineering concept.
+Each notebook specifies one connected stage of repository development.
 
-## Creating a New Repository
+## Repository outputs
 
-1. Create a repository from this template.
-2. Rename the Python package and repository references.
-3. Replace the `RepositoryContext` in Notebook 00.
-4. Run `00_engineering_context.ipynb`.
-5. Continue with `01_constraints.ipynb`.
+- reusable engineering notebooks
+- repository context figures
+- machine-readable engineering specifications
+- reusable Python package
+- engineering benchmarks and examples
+
+The repository is designed so that future engineering repositories reuse the same specification grammar while specializing only the engineering context and connected lanes for a new domain.

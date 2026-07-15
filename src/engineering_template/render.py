@@ -41,3 +41,30 @@ def render_specification_grammar(context: RepositoryContext) -> None:
 """
         )
     )
+
+
+def render_repository_lane(context: RepositoryContext) -> None:
+    """Render the repository lane from context labels and relationships."""
+
+    chain_parts = [context.lane_labels[0]]
+
+    for relationship, next_label in zip(
+        context.lane_relationships,
+        context.lane_labels[1:],
+    ):
+        chain_parts.append(f"{relationship} {next_label}")
+
+    lane_chain = " ".join(chain_parts)
+
+    display(
+        Markdown(
+            f"""## {context.repository_variable_title}
+
+**{context.connected_lane}**
+
+{lane_chain}
+
+**{context.design_principle}**
+"""
+        )
+    )

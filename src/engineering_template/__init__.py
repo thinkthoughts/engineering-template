@@ -16,6 +16,7 @@ from .figures import (
 from .render import (
     render_engineering_context,
     render_specification_grammar,
+    render_repository_lane,
 )
 from .paths import (
     DATA,
@@ -46,6 +47,7 @@ __all__ = [
     "generate_context_figures",
     "render_engineering_context",
     "render_specification_grammar",
+    "render_repository_lane",
     "create_outputs_archive",
     "finalize_notebook",
 ]

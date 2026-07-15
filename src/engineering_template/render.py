@@ -68,3 +68,22 @@ def render_repository_lane(context: RepositoryContext) -> None:
 """
         )
     )
+
+
+def render_repository_sequence(context: RepositoryContext) -> None:
+    """Render the repository notebook sequence."""
+
+    sequence_lines = "\n".join(
+        f"- {item}" for item in context.construction_sequence
+    )
+
+    display(
+        Markdown(
+            f"""## {context.repository_sequence_title}
+
+{context.repository_sequence_caption}
+
+{sequence_lines}
+"""
+        )
+    )

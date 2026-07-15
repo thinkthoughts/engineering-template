@@ -17,6 +17,7 @@ from .render import (
     render_engineering_context,
     render_specification_grammar,
     render_repository_lane,
+    render_repository_sequence,
 )
 from .paths import (
     DATA,
@@ -48,6 +49,7 @@ __all__ = [
     "render_engineering_context",
     "render_specification_grammar",
     "render_repository_lane",
+    "render_repository_sequence",
     "create_outputs_archive",
     "finalize_notebook",
 ]

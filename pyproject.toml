@@ -3,12 +3,13 @@ requires = ["setuptools>=75", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "benefits-distribution"
+name = "engineering-template"
 version = "0.1.0"
-description = "Benefit distribution as an engineering variable for sustainable development."
+description = "A reusable template for developing engineering repositories from leading specifications."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
+
 dependencies = [
   "numpy>=2.0",
   "matplotlib>=3.9"

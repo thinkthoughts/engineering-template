@@ -1,19 +1,13 @@
 [build-system]
-requires = ["setuptools>=75", "wheel"]
-build-backend = "setuptools.build_meta"
+requires=["setuptools>=75","wheel"]
+build-backend="setuptools.build_meta"
 
 [project]
-name = "engineering-template"
-version = "0.1.0"
-description = "A reusable template for developing engineering repositories from leading specifications."
-readme = "README.md"
-requires-python = ">=3.10"
-license = { text = "MIT" }
-
-dependencies = [
-  "numpy>=2.0",
-  "matplotlib>=3.9"
-]
+name="engineering-template"
+version="0.1.0"
+description="Reusable engineering template"
+readme="README.md"
+requires-python=">=3.10"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where=["src"]

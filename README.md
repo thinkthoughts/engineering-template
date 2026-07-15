@@ -1,40 +1,44 @@
-# Benefits Distribution
+# Engineering Template
 
-This repository specifies benefit distribution as an engineering variable for sustainable development.
+This repository provides a reusable template for developing engineering repositories from leading specifications.
 
-It develops a connected engineering specification for modeling, measuring, and improving benefit distribution.
+It generates a connected engineering context, reusable figures, machine-readable specifications, and notebook workflows by specializing a single `RepositoryContext` object.
 
-## Engineering statement
+## Engineering Statement
 
-> **Benefit Distribution Specifies Sustainable Development**
+> **Engineering variables specify measurable repository contexts.**
 
-<img src="figures/benefits-distribution-repo.png" />
+*Replace this statement with the engineering statement for your repository.*
 
-## Engineering grammar
+<img src="figures/repository-template.png" />
 
-```
+## Specification Grammar
+
+```text
 Constraint
 ↓
-Connected lanes
+Connected lane
 ↓
-Engineering objects
+Engineering object
 ↓
-Engineering variables
+Engineering variable
 ↓
-Observable states
+Observable state
 ↓
-Indicators
+Indicator
 ```
 
-## Repository construction
+**Admissible generalizations trail leading specifications.**
 
-```
+## Repository Notebook Sequence
+
+```text
 00  Engineering Context
 01  Constraints
 07  Connected Lanes
 11  Engineering Objects
 13  Engineering Variables
-17  State Estimation
+17  Observable State
 19  Distribution
 23  Dynamics
 29  Optimization
@@ -42,9 +46,9 @@ Indicators
 43  Benchmarks
 ```
 
-Each notebook specifies one connected stage of repository development.
+Each notebook develops an engineering concept.
 
-## Repository outputs
+## Repository Outputs
 
 - reusable engineering notebooks
 - repository context figures
@@ -52,4 +56,26 @@ Each notebook specifies one connected stage of repository development.
 - reusable Python package
 - engineering benchmarks and examples
 
-The repository is designed so that future engineering repositories reuse the same specification grammar while specializing only the engineering context and connected lanes for a new domain.
+## Repository Structure
+
+```text
+RepositoryContext
+        ↓
+validation.py
+        ↓
+figures.py
+        ↓
+Notebook 00
+        ↓
+engineering_context.json
+```
+
+A new engineering repository is created by specializing the `RepositoryContext` while reusing the notebook structure, specification grammar, figure generation, validation, and repository workflow.
+
+## Creating a New Repository
+
+1. Clone this repository.
+2. Rename the Python package and repository.
+3. Update the `RepositoryContext`.
+4. Run `00_engineering_context.ipynb`.
+5. Begin Notebook 01 for the new engineering domain.

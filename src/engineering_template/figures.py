@@ -103,7 +103,10 @@ def plot_repository_lane(
         )
 
     count = len(symbols)
-    relationship_text = " ".join(relationships)
+    relationship_text = " ".join(
+        f"{labels[index]} {relationship} {labels[index + 1]}."
+        for index, relationship in enumerate(relationships)
+    )
 
     figure, axis = plt.subplots(figsize=(max(12, count * 3.1), 4.8))
     axis.axis("off")

@@ -1,58 +1,152 @@
-# Benefits Distribution
+# Engineering Template
 
-This repository develops **Benefit Distribution** as an engineering variable for measurable engineering outcomes.
-
-It specializes a reusable engineering template for modeling, measuring, and improving benefit distribution through connected engineering specifications.
+A reusable repository template for developing engineering concepts through
+leading specifications, connected constraints, observable states, and
+admissible generalization.
 
 ---
 
 # Engineering Statement
 
-> **Benefit Distribution Specifies Sustainable Development**
+Each repository specializes one engineering statement.
 
-<p align="center">
-  <img src="figures/engineering-template-repo.png" alt="Engineering Template">
-</p>
+The engineering statement identifies the engineering concept developed by the
+repository and provides the leading specification for subsequent notebooks.
+
+---
+
+# Read Me
+
+This repository is a reusable engineering template.
+
+Each repository specializes the template by developing one engineering concept
+through a common notebook sequence and engineering grammar.
+
+The template emphasizes reusable engineering structure rather than
+repository-specific implementation.
 
 ---
 
 # Engineering Template
 
-Every engineering repository follows the same reusable template.
+The engineering template separates reusable engineering structure from
+repository specialization.
 
-Each notebook has four independent identities.
+Every specialized repository shares the same engineering grammar while
+developing different engineering concepts.
 
-| Function | Notebook | Engineering Concept | Grammar |
-|:--------:|:--------:|---------------------|:-------:|
-| **R0** | **00** | Engineering Context | **Z** |
-| **R1** | **01** | Context Validation | **Z1** |
-| **R1** | **07** | Leading Specification | **A** |
-| **R1** | **11** | Specification Development | **A1** |
-| **R2** | **13** | Connected Constraints | **B** |
-| **R2** | **19** | Constraint Integration | **B1** |
-| **R3** | **23** | Engineering Objects | **C** |
-| **R4** | **29** | Observable States | **D** |
-| **R5** | **37** | Admissible Generalization | **E** |
-| **R6** | **43** | Engineering Synthesis | **F** |
+The template presently develops the following notebook sequence.
 
-Each field answers exactly one question.
+| Role Identifier | Notebook Identifier | Engineering Concept | Grammar Identifier |
+|-----------------|--------------------:|---------------------|--------------------|
+| R0 | 00 | Engineering Context | Z |
+| R1 | 01 | Context Validation | Z1 |
+| R1 | 07 | Leading Specification | A |
+| R1 | 11 | Specification Development | A1 |
+| R2 | 13 | Connected Constraints | B |
+| R2 | 19 | Constraint Integration | B1 |
+| R3 | 23 | Engineering Objects | C |
+| R4 | 29 | Observable States | D |
+| R5 | 37 | Admissible Generalization | E |
+| R6 | 43 | Engineering Synthesis | F |
 
-| Field | Purpose |
-|--------|---------|
-| **Function** | What engineering function does this notebook serve? |
-| **Notebook** | Which notebook is this? |
-| **Engineering Concept** | What engineering concept is developed? |
-| **Grammar** | Where does this notebook fit within the reusable engineering grammar? |
+---
 
-The engineering template separates these concerns so that every repository can reuse the same structure while specializing only the engineering context.
+# Repository Identifiers
+
+Repository identifiers specify local engineering meanings.
+
+Different engineering contexts may reuse the same symbols while specifying
+different local meanings.
+
+## Identifier Definitions
+
+| Identifier | Local Meaning |
+|------------|---------------|
+| Role Identifier | Specifies the engineering function developed by a notebook. |
+| Notebook Identifier | Specifies the notebook implementation. |
+| Grammar Identifier | Specifies the notebook position within the engineering grammar. |
+| Engineering Concept | Specifies the engineering concept developed by the notebook. |
+
+Example:
+
+```
+R2_13_Connected_Constraints_B.ipynb
+
+R2                     → Role Identifier
+13                     → Notebook Identifier
+Connected Constraints  → Engineering Concept
+B                      → Grammar Identifier
+```
+
+---
+
+# Repository Vocabulary
+
+Repository vocabulary develops reusable engineering terminology.
+
+Vocabulary is intentionally organized into reusable word pairs and related
+naming conventions.
+
+## Usage Pair Definitions
+
+| Grammar | Usage Pair | Placeholder Definition |
+|----------|------------|------------------------|
+| Z | Engineering Statement | Repository engineering claim. |
+| Z | Engineering Template | Reusable repository architecture. |
+| A | Leading Specification | Leading engineering constraint. |
+| B | Connected Constraints | Connected engineering relationships. |
+| C | Engineering Objects | Constructed engineering objects. |
+| D | Observable States | Measurable engineering states. |
+| E | Admissible Generalization | Supported engineering generalization. |
+| F | Engineering Synthesis | Integrated engineering development. |
+
+*(This glossary intentionally begins small and develops as the template
+matures.)*
+
+## Naming Conventions
+
+Repository documentation prefers identifying and specifying verbs over
+possessive verbs.
+
+Examples include:
+
+- Role identifiers identify.
+- Grammar identifiers identify.
+- Engineering statements specify.
+- Leading specifications specify.
+- Notebooks develop.
+- Repositories specialize.
+- Engineering synthesis integrates.
+
+Engineering meanings are interpreted locally within their engineering context.
+
+---
+
+# Repository Notebook Sequence
+
+Each notebook develops one engineering concept.
+
+| Notebook | Engineering Concept |
+|----------|---------------------|
+| 00 | Engineering Context |
+| 01 | Context Validation |
+| 07 | Leading Specification |
+| 11 | Specification Development |
+| 13 | Connected Constraints |
+| 19 | Constraint Integration |
+| 23 | Engineering Objects |
+| 29 | Observable States |
+| 37 | Admissible Generalization |
+| 43 | Engineering Synthesis |
 
 ---
 
 # Engineering Grammar
 
-Every repository develops the same engineering grammar.
+The engineering grammar specifies a reusable engineering progression.
 
-```text
+```
 Engineering Context
         ↓
 Leading Specification
@@ -68,58 +162,65 @@ Admissible Generalization
 Engineering Synthesis
 ```
 
-The grammar describes reusable engineering relationships.
+Grammar identifiers presently develop:
 
-The repository specializes those relationships for a particular engineering domain.
+```
+Z → A → B → C → D → E → F
+```
+
+Future repositories specialize this grammar without changing its reusable
+structure.
 
 ---
 
-# Repository Construction
+# Repository Specialization
 
-This repository specializes the engineering template for **Benefit Distribution**.
+Each repository specializes the engineering template by developing one
+engineering statement.
 
-| Notebook | Repository Development |
-|:--------:|------------------------|
-| **R0_00** | Engineering Context |
-| **R1_01** | Context Validation |
-| **R1_07** | Benefit Distribution Specification |
-| **R1_11** | Specification Development |
-| **R2_13** | Connected Benefit Constraints |
-| **R2_19** | Constraint Integration |
-| **R3_23** | Benefit Distribution Objects |
-| **R4_29** | Observable Benefit States |
-| **R5_37** | Benefit Distribution Generalization |
-| **R6_43** | Engineering Benchmarks and Synthesis |
+Examples include:
 
-Each notebook develops one connected engineering concept while remaining reusable across repositories.
+- Benefit Distribution
+- Quantum Platforms
+- Battery Lifetime
+- Information Bundling
+- Predictive Representation Geometry
+
+Additional repositories may specialize the same template while preserving the
+same engineering grammar.
 
 ---
 
 # Repository Outputs
 
-This repository produces reusable engineering artifacts.
+Repository outputs typically include:
 
 - Engineering notebooks
-- Repository context figures
-- Machine-readable engineering specifications
-- Reusable Python package
-- Validation utilities
-- Engineering benchmarks
-- Engineering visualizations
+- Engineering figures
+- Engineering reports
+- Repository documentation
+- Generated datasets
+- Reusable source modules
+
+Outputs specialize the engineering statement developed by the repository.
 
 ---
 
 # Repository Design
 
-The engineering template separates four independent concerns.
+The engineering template develops reusable engineering structure.
 
-- **Function** specifies the engineering role.
-- **Notebook** specifies the implementation artifact.
-- **Engineering Concept** specifies what is developed.
-- **Grammar** specifies where the notebook belongs within the reusable engineering structure.
+Current design principles include:
 
-Because each concern has a single responsibility, repositories can evolve without changing the engineering grammar.
+- Each heading specifies one preferred name.
+- Each identifier specifies one local meaning.
+- Each notebook develops one engineering concept.
+- Each repository specializes one engineering statement.
+- Vocabulary develops through reusable usage pairs.
+- Engineering grammar remains reusable across repositories.
+- Repository specialization follows leading specifications.
+- Admissible generalizations trail leading specifications.
 
-New engineering repositories reuse the same template while specializing only their engineering context, engineering statement, and domain-specific concepts.
-
-This separation makes engineering comprehension, repository reuse, and long-term maintenance substantially easier.
+Future revisions may refine repository vocabulary, glossary organization,
+language specialization, and engineering grammar while preserving the reusable
+engineering template.
